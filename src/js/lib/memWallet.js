@@ -62,10 +62,10 @@ function updateButton(){
   var button = i('btn');
   if(passphrase.length == 0) {
     button.disabled = true;
-    button.textContent = 'Generate';
+    button.textContent = '종이지갑 생성';
   } else if (passphrase.length < 12) {
     button.disabled = false;
-    button.textContent = 'Consider a longer phrase';
+    button.textContent = '더 긴 비밀문구를 사용하세요.';
   } else {
     button.disabled = false;
     button.textContent = 'Generate';
