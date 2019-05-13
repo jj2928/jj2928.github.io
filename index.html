@@ -109,6 +109,38 @@
     </div>
 
     <div id="result" style="display:none;">
+      <div class="currency nxt">
+        <div class="upload">
+          <label for="upload-img">Upload Background Image<sup>550x300</sup> (ARDR)</label>
+          <input type="file" id="upload-img" name="upload-img" accept=".jpg, .jpeg, .png .webp">
+          <button>Remove from Printing</button>
+        </div>
+
+        <img class="wallet-bg" src="src/img/bgpaper_ardor.webp" alt="Ardor Wallet">
+        <span class="identicon i-nxt"></span>
+
+        <span id="qr-nxtacct" class="qr-image qr-pub"></span>
+        <span id="nxtacct" class="qr-text pub-text"></span>
+
+        <span class="date"></span>
+
+
+        <span id="qr-nxtpri" class="qr-image qr-pri"></span>
+        <span id="nxtpri" class="qr-text pri-text"></span>
+
+        <button class="secret-share-btn">Enable Secret Sharing</button>
+        <div class="secret-share-form">
+          <div class="secret-config secret-shares">
+            <label for="shares">Number of shares</label>
+            <input type="number" value="2" min="2" max="9" class="shares">
+          </div>
+          <div class="secret-config secret-threshold">
+            <label for="threshold">Threshold</label>
+            <input type="number" value="2" min="2" max="9" class="threshold">
+          </div>
+          <button class="split">Split</button>
+        </div>
+      </div>
       <div class="currency seg">
         <div class="upload">
           <label for="upload-img">Upload Background Image<sup>550x300</sup> (SegWit)</label>
@@ -239,38 +271,6 @@
           <button class="split">Split</button>
         </div>
       </div>
-      <div class="currency nxt">
-        <div class="upload">
-          <label for="upload-img">Upload Background Image<sup>550x300</sup> (ARDR)</label>
-          <input type="file" id="upload-img" name="upload-img" accept=".jpg, .jpeg, .png .webp">
-          <button>Remove from Printing</button>
-        </div>
-
-        <img class="wallet-bg" src="src/img/bgpaper_ardor.webp" alt="Ardor Wallet">
-        <span class="identicon i-nxt"></span>
-
-        <span id="qr-nxtacct" class="qr-image qr-pub"></span>
-        <span id="nxtacct" class="qr-text pub-text"></span>
-
-        <span class="date"></span>
-
-
-        <span id="qr-nxtpri" class="qr-image qr-pri"></span>
-        <span id="nxtpri" class="qr-text pri-text"></span>
-
-        <button class="secret-share-btn">Enable Secret Sharing</button>
-        <div class="secret-share-form">
-          <div class="secret-config secret-shares">
-            <label for="shares">Number of shares</label>
-            <input type="number" value="2" min="2" max="9" class="shares">
-          </div>
-          <div class="secret-config secret-threshold">
-            <label for="threshold">Threshold</label>
-            <input type="number" value="2" min="2" max="9" class="threshold">
-          </div>
-          <button class="split">Split</button>
-        </div>
-      </div>
       <div class="currency btc">
         <div class="upload">
           <label for="upload-img">Upload Background Image<sup>550x300</sup> (BTC)</label>
@@ -341,7 +341,7 @@
   <div id="paperwallet-details">
     <h4>사용안내</h4>
     <ol>
-      <li><em>선택:</em> 오프라인에서도 지갑을 생성할 수 있습니다.</li>
+      <li><em>선택:</em> 오프라인에서도 지갑을 생성할 수 있습니다. (2분 소요)</li>
       <li><em>선택:</em> i)"전문가 모드"에서 오프라인 모드 지갑만들기를 선택하세요.</li>
       <li><em>선택:</em> ii)만들어진 지갑을 HTML 파일로 저장하세요.</li>
       <li>이메일 주소와 사용하고 싶은 비밀문구를 입력하고 지갑생성 버튼을 눌러주세요.</li>
@@ -376,9 +376,6 @@
     <h4>영감을 받은 프로젝트</h4>
     maxtaco 가 만든 Warp Wallet - https://github.com/keybase/warpwallet<br />
     David Bengoa 가 만든 Memwallet - https://github.com/dvdbng/memwallet<br />
-
-    <h4>이거 더 커스터마이즈 될 수 있을까요?</h4>
-    네, 구글에 xCubicle 쳐보세요.
 
     <h4>소스 코드</h4>
     https://github.com/jj2928/jj2928.github.io
