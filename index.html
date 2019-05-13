@@ -104,8 +104,8 @@
     </div><!-- #login-box -->
 
     <div class="result-btn" style="display:none;">
-      <button class="rerun-btn">Generate Another Wallet</button>
-      <button class="print">Print</button>
+      <button class="rerun-btn">더 생성하기</button>
+      <button class="print">프린트</button>
     </div>
 
     <div id="result" style="display:none;">
@@ -113,7 +113,7 @@
         <div class="upload">
           <label for="upload-img">Upload Background Image<sup>550x300</sup> (ARDR)</label>
           <input type="file" id="upload-img" name="upload-img" accept=".jpg, .jpeg, .png .webp">
-          <button>Remove from Printing</button>
+          <button>프린트 대상에서 제외하기</button>
         </div>
 
         <img class="wallet-bg" src="src/img/bgpaper_ardor.webp" alt="Ardor Wallet">
@@ -128,22 +128,22 @@
         <span id="qr-nxtpri" class="qr-image qr-pri"></span>
         <span id="nxtpri" class="qr-text pri-text"></span>
 
-        <button class="secret-share-btn">Enable Secret Sharing</button>
+        <button class="secret-share-btn">다중 잠금장치</button>
         <div class="secret-share-form">
           <div class="secret-config secret-shares">
-            <label for="shares">Number of shares</label>
+            <label for="shares">총 자물쇠 개수</label>
             <input type="number" value="2" min="2" max="9" class="shares">
           </div>
           <div class="secret-config secret-threshold">
-            <label for="threshold">Threshold</label>
+            <label for="threshold">잠금해체시 필요한 열쇠 개수</label>
             <input type="number" value="2" min="2" max="9" class="threshold">
           </div>
-          <button class="split">Split</button>
+          <button class="split">다중 잠금장치 실행</button>
         </div>
       </div>
       <div class="currency seg">
         <div class="upload">
-          <label for="upload-img">Upload Background Image<sup>550x300</sup> (SegWit)</label>
+          <label for="upload-img">지갑배경을 삽입하거나 교체하시려면?<sup>550x300</sup> (SegWit)</label>
           <input type="file" id="upload-img" name="upload-img" accept=".jpg, .jpeg, .png .webp">
           <button>Remove from Printing</button>
         </div>
@@ -162,11 +162,11 @@
         <button class="secret-share-btn">Enable Secret Sharing</button>
         <div class="secret-share-form">
           <div class="secret-config secret-shares">
-            <label for="shares">Number of shares</label>
+            <label for="shares">열쇠 개수</label>
             <input type="number" value="2" min="2" max="9" class="shares">
           </div>
           <div class="secret-config secret-threshold">
-            <label for="threshold">Threshold</label>
+            <label for="threshold">결제시 필요한 열쇠 개수</label>
             <input type="number" value="2" min="2" max="9" class="threshold">
           </div>
           <button class="split">Split</button>
